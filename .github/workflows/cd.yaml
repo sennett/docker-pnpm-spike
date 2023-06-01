@@ -15,8 +15,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: '${{ github.head_ref || github.ref_name }}'
-    needs:
-      - ci
     steps:
       - uses: actions/checkout@v3
 
