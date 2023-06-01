@@ -7,8 +7,6 @@ on:
 
 permissions: write-all
 
-env:
-
 concurrency:
   group: 'cd-${{ github.head_ref || github.ref_name }}'
 
